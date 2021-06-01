@@ -1,4 +1,7 @@
+-r requirements.txt
+
 tox
 pytest
 pytest-cov
 pylint
+notebook
