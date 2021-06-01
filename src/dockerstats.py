@@ -53,6 +53,9 @@ class DockerStats:
     def memory_avg(self):
         return round(self.df["MEM %"].mean(), 2)
 
+    def memory_avg_abs(self):
+        return round(self.df["MEM Usage"].mean(), 2)
+
     @staticmethod
     def __category_label(category):
         if "%" in category:
